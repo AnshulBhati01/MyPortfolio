@@ -6,6 +6,7 @@
     list-style: none;
     scroll-behavior: smooth;
     scroll-padding-top: 3.5rem;
+    text-decoration-line: none;
 
 }
 :root{
@@ -29,6 +30,7 @@ header{
     right: 0;
     z-index: 1000;
     display: flex;
+    
     align-items: center;
     justify-content: space-between;
     background: transparent;
@@ -40,7 +42,6 @@ header{
     font-size: 30px;
     font-weight: bold;
     letter-spacing: 1px;
-
 }
 .navbar{
     display: flex;
@@ -109,21 +110,16 @@ section{
 .home-text h1{
     margin: 20px 0px 20px;
     font-size: var(--big-font);
-    left:-100%;
-    transition: left 1s;
 }
 span{
     color: var(--main-color);
-}
-.home-text h1:hover{
-    animation: slide-in 3s forwards;
 }
 .home-text h3{
     font-size: 25px;
     margin-bottom: 55px;
 }
 .home-text h4{
-    color:#767b81;
+    color:#5c6067;
     font-size: 20px;
     letter-spacing: 2px;
 }
@@ -255,7 +251,7 @@ header.sticky{
     margin-bottom: 15px;
 }
 .row p{
-    color: var(--text-color)
+    color: var(--text-color);
     font-size :var(--p-font);
 }
 .row:hover{
@@ -267,7 +263,7 @@ header.sticky{
 }
 .portfolio-content{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, auto));
+    grid-template-columns: repeat(auto-fit, minmax(320px, auto));
     grid-gap: 2rem;
     align-items: center;
     margin-top: 4rem;
@@ -294,7 +290,7 @@ header.sticky{
     margin-bottom: 15px;
 }
 .box img:hover{
-    transform: scale(1.1);
+    transform: scale(1.2);
 }
 .contact{
     background: var(--bg-color);
@@ -331,8 +327,8 @@ form textarea{
     width: 100%;
     padding: 20px;
     outline: none;
-    background: var(--secound-bg-color);
-    color: var(--text-color);
+    background:#fff;
+    color: var(--bg-color);
     font-size: 1rem;
     margin-bottom: 0.5rem;
     border-radius: 10px;
@@ -449,8 +445,4 @@ form textarea{
         width: 760px;
         height:auto;
     }
-}
-@keyframes slide-in {
-    0%{left: -100%;}
-    100%{left: 0;}
 }
