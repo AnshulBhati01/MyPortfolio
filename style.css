@@ -264,15 +264,15 @@ header.sticky{
 .portfolio-content{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(320px, auto));
-    grid-gap: 2rem;
-    align-items: center;
+    grid-gap: 3rem;
+    align-items:center;
     margin-top: 4rem;
     cursor: pointer;
 }
 .box img{
     max-width: 100%;
     width: 400px;
-    height: auto;
+    height:auto;
     border-radius: 10px;
     transition: all .30s;
 }
@@ -280,7 +280,7 @@ header.sticky{
     color: var(--secound-bg-color);
     font-size: var(--p-font);
     margin-top: 1rem;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
 
 }
 .box h5{
@@ -290,7 +290,7 @@ header.sticky{
     margin-bottom: 15px;
 }
 .box img:hover{
-    transform: scale(1.2);
+    transform: scale(1.1);
 }
 .contact{
     background: var(--bg-color);
@@ -312,11 +312,14 @@ header.sticky{
 
 }
 .contact-form p{
-    color: var(--secound-bg-color);
+    color: #b2aeae;
     letter-spacing: 1px;
     line-height: 28px;
     font-size: var(--p-font);
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
+}
+.contact-form p:i{
+    font-size: 2.5;
 }
 .contact-form form{
     position: relative;
@@ -353,16 +356,35 @@ form textarea{
     transform: translatex(10px);
     cursor: pointer;
 }
+.links{
+    position: relative;
+    text-align: center ;
+    background: var(--secound-bg-color);
+    margin-top: 5px;
+}
+
+.links i{
+    color: var(--bg-color);
+    margin-bottom: 0px;
+    margin-top: 6px;
+    margin-right:20px;
+    font-size: 2.2rem;
+    transition: all .30s;
+}
+.links i:hover{
+    transform: scale(1.2);
+}
 .footer{
     text-align: center;
     background: var(--secound-bg-color);
-    padding: 34px;
+    padding: 25px;
 }
 .footer p{
     font-style: 17px;
     color:var(--text-color);
     letter-spacing: normal;
 }
+
 
 @media (max-width: 1270px){
     header{
